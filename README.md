@@ -1,13 +1,13 @@
 <div align="center">
   
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://simpleicons.org/icons/github.svg">
-  <img alt="GitHub Icon" src="https://simpleicons.org/icons/github.svg" width="100">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-white.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-black.svg">
+  <img alt="Tea2Go Logo" src="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-black.svg" width="500">
 </picture>
 
   <h1>
-    Tea2Go - Portfolio Project
+    Portfolio Project
   </h1>
 </div>
 
