@@ -17,13 +17,10 @@ Tea2Go is a delightful virtual tea cafe that I've created as part of my web deve
 
 ## 💡 Features
 
-- Home Page: Welcome visitors to Tea2Go with a warm and inviting hero banner that sets the tone for the entire web experience.
-
-- About Us: Learn more about Tea2Go's story and my passion for tea as I take you on a journey through the world of tea.
-
-- Collection: Explore an exquisite assortment of tea varieties, each thoughtfully selected to bring joy and comfort to our patrons. Don't forget to check out our "Tea of the Month" section, where you can explore our latest special blend available for a limited time.
-
-- Contact: Get in touch with us easily through the "Contact" section. Whether you have inquiries, want to make reservations, or simply share your thoughts about our teas, we're always ready to listen.
+- Home Page: Introduce visitors to the world of Tea2Go with a captivating hero banner and highlights of the unique tea offerings.
+- About Us: Provide insights into the brand's values, commitment to quality, and dedication to sustainability.
+- Collection: Showcase an exquisite assortment of tea varieties, including black tea, green tea, white tea, matcha, herbal tea, chai, oolong, rooibos, and more. The Collection page will also feature the "Tea of the Month," offering visitors the opportunity to explore the latest special blend available for a limited time.
+- Contact: Offer multiple contact options for inquiries, feedback, and questions about the teas.
 
 
 ## ⚙️ Technical Details 
