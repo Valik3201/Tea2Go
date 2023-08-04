@@ -7,7 +7,7 @@
 </picture>
 
   <h1>
-    Tea2Go - Portfolio Project
+    Portfolio Project
   </h1>
 </div>
 
