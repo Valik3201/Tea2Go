@@ -48,7 +48,7 @@ As I crafted Tea2Go, I drew inspiration from various sources to create a unique 
 
 4. [Unsplash](https://unsplash.com) - Photography from Unsplash brought life to Tea2Go, making the project more visually appealing.
 
-## Future Updates
+## 🚀 Future Updates
 
 Tea2Go is an ongoing project with plans for future updates:
 
