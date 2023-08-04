@@ -11,7 +11,7 @@
   </h1>
 </div>
 
-# 📝 Overview
+## 📝 Overview
 
 Tea2Go is a website for a non-real tea cafe created as part of web development learning at **[Codecademy](https://github.com/Codecademy)**. The goal of this project is to showcase skills in building a web site for a tea cafe named "Tea2Go." The web site includes pages such as Home, About Us, Collection, and Contact.
 
