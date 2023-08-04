@@ -59,7 +59,7 @@ Tea2Go is an ongoing project with plans for future updates:
 
 ## 🙌 Gratitude to Codecademy
 
-I would like to express my heartfelt gratitude to Codecademy for providing me with this wonderful project opportunity. The hands-on experience of building Tea2Go has been instrumental in honing my web development skills, and I am truly grateful for the guidance and resources offered by Codecademy.
+I would like to express my gratitude to **[Codecademy](https://github.com/Codecademy)** for providing me with this project opportunity. The hands-on experience of building Tea2Go has been instrumental in honing my web development skills, and I am grateful for the guidance and resources offered by Codecademy.
 
 
 ## 💌 Feedback 
