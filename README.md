@@ -13,7 +13,7 @@
 
 # 📝 Overview
 
-Tea2Go is a delightful virtual tea cafe that I've created as part of my web development journey at **[Codecademy](https://github.com/Codecademy)**. @codecademy The goal of this project is to showcase my skills in building a web page for a charming tea cafe called "Tea2Go." The web page includes sections such as Home, About Us, Collection, and Contact, all carefully designed to evoke the essence of a welcoming tea haven.
+Tea2Go is a delightful virtual tea cafe that I've created as part of my web development journey at **[Codecademy](https://github.com/Codecademy)**. The goal of this project is to showcase my skills in building a web page for a charming tea cafe called "Tea2Go." The web page includes sections such as Home, About Us, Collection, and Contact, all carefully designed to evoke the essence of a welcoming tea haven.
 
 ## 💡 Features
 
