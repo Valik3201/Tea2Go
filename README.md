@@ -1,6 +1,17 @@
-# Tea2Go - Portfolio Project
+<div align="center">
+  
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://simpleicons.org/icons/github.svg">
+  <img alt="GitHub Icon" src="https://simpleicons.org/icons/github.svg" width="100">
+</picture>
 
-## 📝 Overview
+  <h1>
+    Tea2Go - Portfolio Project
+  </h1>
+</div>
+
+# 📝 Overview
 
 Tea2Go is a delightful virtual tea cafe that I've created as part of my web development journey at **Codecademy**. The goal of this project is to showcase my skills in building a web page for a charming tea cafe called "Tea2Go." The web page includes sections such as Home, About Us, Collection, and Contact, all carefully designed to evoke the essence of a welcoming tea haven.
 
