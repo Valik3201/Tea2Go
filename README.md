@@ -1,9 +1,9 @@
 <div align="center">
   
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-black.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-white.svg">
-  <img alt="GitHub Icon" src="https://simpleicons.org/icons/github.svg" width="100">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-white.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-black.svg">
+  <img alt="GitHub Icon" src="https://simpleicons.org/icons/github.svg" width="200">
 </picture>
 
   <h1>
