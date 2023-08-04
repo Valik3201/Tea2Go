@@ -1,0 +1,496 @@
+:root {
+  /* Colors */
+  --aragonite-white: #f3eff5;
+  --bgColor: #f6f8fa;
+  --black: #000;
+  --dissolved-denim: #e2ebf5;
+  --first-frost: #cfe5f3;
+  --forest-green: #72b01d;
+  --grey: #454955;
+  --insignia-white: #ebf2fa;
+  --mossy-green: #3f7d20;
+  --poppy-red: #da2c38;
+  --raven: #0d0a0b;
+  --sparkling-frost: #d1d5da;
+  --white: #fff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* Emojis */
+  background-color: var(--bgColor);
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+::selection {
+  background-color: var(--forest-green, #72b01d);
+  color: var(--white, #fff);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bolder;
+  font-size: 24px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--forest-green);
+  fill: var(--forest-green);
+}
+
+.mission-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/top-view-tea-with-lemon-copy-space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 760px;
+}
+
+.mission-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-description h1,
+.mission-description p {
+  color: var(--black, #000);
+  text-align: center;
+}
+
+.mission-description h1 {
+  font-size: 70px;
+  margin-block-start: 0;
+}
+
+.mission-description p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.banner-wrapper {
+  background-image: url(images/fruit-ice-tea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 760px;
+  position: relative;
+}
+
+.banner-wrapper .container {
+  display: block;
+}
+
+.banner-description {
+  padding-top: 10%;
+  text-align: right;
+}
+
+.banner-description h1 {
+  font-size: 70px;
+  line-height: 1.5;
+  margin-block-start: 0;
+}
+
+.banner-description p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.styled-link {
+  background-color: var(--forest-green, #72b01d);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.styled-link:hover,
+.styled-link:focus {
+  background-color: var(--mossy-green, #3f7d20);
+}
+
+.red-paragraph {
+  color: var(--poppy-red, #da2c38);
+}
+
+.header-container {
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+.nav-menu-section li {
+  margin-block-start: 16px;
+}
+
+.nav-menu-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-menu-items a {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-menu-items a:hover,
+.nav-menu-items a:focus {
+  color: var(--forest-green);
+}
+
+.nav-menu-items .active-link {
+  color: var(--forest-green, #72b01d);
+}
+
+.active-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--forest-green, #72b01d);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.section {
+  margin: 100px 0;
+}
+
+.featured-tea-heading {
+  align-items: center;
+}
+
+.featured-tea-heading h2 {
+  margin: 0 auto;
+  font-size: 38px;
+}
+
+.featured-tea-heading h3 {
+  font-size: 20px;
+  margin-bottom: 56px;
+}
+
+.featured-tea-section {
+  display: flex;
+  row-gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.featured-tea-section li {
+  max-width: 360px;
+  background-color: var(--sparkling-frost, #d1d5da);
+  border-radius: 15px;
+}
+
+.featured-tea-section h4 {
+  font-size: 20px;
+  padding: 15px 30px;
+  margin: 0;
+}
+
+.featured-tea-section p {
+  padding: 0 30px 20px 30px;
+  margin: 0;
+}
+
+.featured-tea-section img {
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.locations-wrapper,
+.citrus-sunset-wrapper {
+  text-align: center;
+}
+
+.locations-wrapper h2 {
+  font-size: 38px;
+  margin-bottom: 56px;
+}
+
+.citrus-sunset-wrapper h2 {
+  font-size: 38px;
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.locations-section,
+.citrus-sunset-section {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.locations-section p {
+  line-height: 1.5;
+}
+
+.locations-section li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: calc((100% - 72px) / 3);
+  height: 200px;
+  background-color: var(--mossy-green, #3f7d20);
+  color: var(--bgColor, #f7f9fb);
+  border-radius: 15px;
+}
+
+.locations-section li:first-child {
+  background-color: var(--forest-green, #72b01d);
+}
+
+.locations-section li:last-child {
+  background-color: var(--grey, #454955);
+}
+
+.citrus-sunset-section li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: calc((100% - 72px) / 4);
+  background-color: var(--forest-green, #72b01d);
+  color: var(--bgColor, #f7f9fb);
+  border-radius: 15px;
+}
+
+.citrus-sunset-section li:nth-child(1),
+.citrus-sunset-section li:nth-child(3),
+.citrus-sunset-section li:nth-child(6),
+.citrus-sunset-section li:nth-child(8) {
+  padding: 10px 30px;
+}
+
+.citrus-sunset-section li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.home-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/spoons-with-herbal-tea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.home-image-section h2 {
+  font-size: 38px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--raven, #0d0a0b);
+}
+
+.footer-wrapper {
+  flex-direction: column;
+}
+
+.footer-wrapper .logo {
+  margin-bottom: 36px;
+  width: 125px;
+}
+
+.footer-wrapper-contacts {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.footer-wrapper h3 {
+  margin-top: 0;
+}
+
+.footer-section {
+  background-color: var(--sparkling-frost, #d1d5da);
+  padding-top: 72px;
+}
+
+.footer-contact {
+  width: 200px;
+}
+
+.footer-contact a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-contact address,
+.footer-contact a {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.5;
+  color: var(--black, #000);
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus {
+  color: var(--forest-green, #339966);
+  fill: var(--forest-green, #339966);
+}
+
+.copyright {
+  background-color: var(--raven, #0d0a0b);
+  margin-top: 72px;
+}
+
+.copyright p {
+  color: var(--aragonite-white, #f3eff5);
+  text-align: center;
+  padding: 20px 0;
+  margin-block-end: 0;
+}
+
+.benefits-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.benefits-section ul {
+  display: flex;
+  gap: 36px;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.benefits-section li {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.benefits-section svg {
+  fill: var(--forest-green, #72b01d);
+  display: block;
+  margin: auto;
+}
+
+.benefits-section h3 {
+  text-align: center;
+}
+
+.benefits-section p {
+  text-align: justify;
+}
+
+.special-offer-wrapper {
+  background-image: url(images/aromatic-fruit-ice-tea-table.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 760px;
+  position: relative;
+}
+
+.special-offer-wrapper .container {
+  display: block;
+}
+
+.offer-description {
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.offer-description > p {
+  color: var(--poppy-red, #da2c38);
+  margin-block-start: 0;
+}
+
+.offer-description h2 {
+  font-size: 38px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.offer-description-card {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.offer-description-card img {
+  border-radius: 15px;
+}
+
+.offer-description-card p {
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.offer-description-card h3 {
+  color: var(--poppy-red, #da2c38);
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.offer-description-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  height: 330px;
+  margin-top: 8px;
+}
