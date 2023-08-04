@@ -39,7 +39,7 @@ As I crafted Tea2Go, I drew inspiration from various sources to create a unique 
 
 4. [Unsplash](https://unsplash.com) - Unsplash's stunning photography has helped me bring life to Tea2Go, making the project more visually appealing.
 
-## Gratitude to Codecademy 🙌
+## 🙌 Gratitude to Codecademy
 
 I would like to express my heartfelt gratitude to Codecademy for providing me with this wonderful project opportunity. The hands-on experience of building Tea2Go has been instrumental in honing my web development skills, and I am truly grateful for the guidance and resources offered by Codecademy.
 
