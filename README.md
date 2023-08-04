@@ -1,10 +1,10 @@
 # Tea2Go - Portfolio Project
 
-## Overview 📝
+## 📝 Overview
 
-Tea2Go is a delightful virtual tea cafe that I've created as part of my web development journey at Codecademy. The goal of this project is to showcase my skills in building a web page for a charming tea cafe called "Tea2Go." The web page includes sections such as Home, About Us, Collection, and Contact, all carefully designed to evoke the essence of a welcoming tea haven.
+Tea2Go is a delightful virtual tea cafe that I've created as part of my web development journey at **Codecademy**. The goal of this project is to showcase my skills in building a web page for a charming tea cafe called "Tea2Go." The web page includes sections such as Home, About Us, Collection, and Contact, all carefully designed to evoke the essence of a welcoming tea haven.
 
-## Features 💡
+## 💡 Features
 
 - Home Page: Welcome visitors to Tea2Go with a warm and inviting hero banner that sets the tone for the entire web experience.
 
@@ -15,7 +15,7 @@ Tea2Go is a delightful virtual tea cafe that I've created as part of my web deve
 - Contact: Get in touch with us easily through the "Contact" section. Whether you have inquiries, want to make reservations, or simply share your thoughts about our teas, we're always ready to listen.
 
 
-## Technical Details ⚙️ 
+## ⚙️ Technical Details 
 
 - **HTML Structure:** I've structured the web page using semantic HTML elements for better accessibility and search engine optimization.
 
@@ -27,7 +27,7 @@ Tea2Go is a delightful virtual tea cafe that I've created as part of my web deve
 
 - **Design Assets:** To enhance the visual aesthetics, I've utilized design assets from Freepik, Figma, Behance, and stunning photography from Unsplash.
 
-## Design Inspiration 🎨
+## 🎨 Design Inspiration
 
 As I crafted Tea2Go, I drew inspiration from various sources to create a unique and captivating web experience. The following sources have influenced the design and aesthetics of Tea2Go:
 
@@ -39,8 +39,12 @@ As I crafted Tea2Go, I drew inspiration from various sources to create a unique 
 
 4. [Unsplash](https://unsplash.com) - Unsplash's stunning photography has helped me bring life to Tea2Go, making the project more visually appealing.
 
+## Gratitude to Codecademy 🙌
 
-## Feedback 💌 
+I would like to express my heartfelt gratitude to Codecademy for providing me with this wonderful project opportunity. The hands-on experience of building Tea2Go has been instrumental in honing my web development skills, and I am truly grateful for the guidance and resources offered by Codecademy.
+
+
+## 💌 Feedback 
 
 I would be grateful for your feedback and review on this project. Your insights will help me improve and refine Tea2Go further. Happy exploring!
 
