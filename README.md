@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-white.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-black.svg">
-  <img alt="GitHub Icon" src="https://simpleicons.org/icons/github.svg" width="500">
+  <img alt="Tea2Go Logo" src="https://github.com/Valik3201/Tea2Go/blob/main/images/logo-black.svg" width="500">
 </picture>
 
   <h1>
