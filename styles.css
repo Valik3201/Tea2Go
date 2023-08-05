@@ -519,7 +519,14 @@ header {
   align-items: flex-start;
   min-height: 330px;
   max-width: 804px;
-  margin-top: 8px;
+}
+
+#styled-text {
+  font-size: 100%;
+  padding: 10px 20px;
+  color: var(--forest-green, #72b01d);
+  border: 1.5px solid var(--forest-green, #72b01d);
+  border-radius: 50px;
 }
 
 .contact-section {
@@ -576,4 +583,11 @@ header {
 .contact-section-info a:hover,
 .contact-section-info a:focus {
   color: var(--forest-green, #339966);
+}
+
+/* Styles for hidden sections */
+
+.hidden-section {
+  opacity: 0;
+  transition: opacity 1s ease;
 }
