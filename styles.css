@@ -533,6 +533,12 @@ header {
   height: auto;
 }
 
+@media (max-width: 1440px) and (min-width: 1223px) {
+  .contact-section {
+    height: 676px;
+  }
+}
+
 @media (max-width: 1224px) {
   .contact-section-image {
     max-width: 1224px;
