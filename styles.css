@@ -453,6 +453,7 @@ h3 {
   height: 200px;
   background-color: var(--mossy-green, #3f7d20);
   color: var(--bgColor, #f7f9fb);
+  transition: background-color 250ms ease;
 }
 
 .locations-section li:first-child {
@@ -463,6 +464,18 @@ h3 {
 .locations-section li:last-child {
   background-color: var(--grey, #454955);
   border-bottom-left-radius: 15px;
+}
+
+.locations-section li:hover {
+  background-color: #3f7425;
+}
+
+.locations-section li:first-child:hover {
+  background-color: #609b15;
+}
+
+.locations-section li:last-child:hover {
+  background-color: #3f424d;
 }
 
 /* Location Map */
@@ -495,9 +508,7 @@ h3 {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
-}
-
-.locationButton:hover {
+  transition: font-size 250ms ease;
 }
 
 /* Tea of the Month */
