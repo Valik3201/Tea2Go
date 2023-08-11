@@ -1,3 +1,15 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+---------------------------------------- */
+
+/* 1. Global Styles
+---------------------------------------- */
+
 :root {
   /* Colors */
   --aragonite-white: #f3eff5;
@@ -48,54 +60,34 @@ header {
   margin: -1px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: bolder;
-  font-size: 24px;
-  color: var(--black);
-  text-decoration: none;
+.hidden-section {
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
-.logo:hover,
-.logo:focus {
-  color: var(--forest-green);
-  fill: var(--forest-green);
-}
+/* 2. Typography Styles
+----------------------------------------  */
 
-.mission-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(images/top-view-tea-with-lemon-copy-space.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 760px;
-}
-
-.mission-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mission-description h1,
-.mission-description p {
-  color: var(--black, #000);
-  text-align: center;
-}
-
-.mission-description h1 {
+h1 {
   font-size: 70px;
+  line-height: 1.5;
   margin-block-start: 0;
 }
 
-.mission-description p {
-  font-size: 24px;
-  line-height: 1.5;
+h2 {
+  font-size: 38px;
 }
+
+h3 {
+  font-size: 20px;
+}
+
+.red-paragraph {
+  color: var(--poppy-red, #da2c38);
+}
+
+/* 3. Structure Styles
+---------------------------------------- */
 
 .container {
   display: flex;
@@ -108,53 +100,14 @@ header {
   flex-direction: column;
 }
 
-.banner-wrapper {
-  background-image: url(images/fruit-ice-tea.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 760px;
-  position: relative;
+.section {
+  margin: 100px 0;
 }
 
-.banner-wrapper .container {
-  display: block;
-}
+/* 4. Module Styles
+---------------------------------------- */
 
-.banner-description {
-  padding-top: 10%;
-  text-align: right;
-}
-
-.banner-description h1 {
-  font-size: 70px;
-  line-height: 1.5;
-  margin-block-start: 0;
-}
-
-.banner-description p {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-.styled-link {
-  background-color: var(--forest-green, #72b01d);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-  text-decoration: none;
-}
-
-.styled-link:hover,
-.styled-link:focus {
-  background-color: var(--mossy-green, #3f7d20);
-}
-
-.red-paragraph {
-  color: var(--poppy-red, #da2c38);
-}
+/* Site navigation */
 
 .header-container {
   justify-content: space-between;
@@ -178,6 +131,7 @@ header {
   font-weight: 700;
   text-decoration: none;
   position: relative;
+  transition: color 250ms ease;
 }
 
 .nav-menu-items a:hover,
@@ -189,162 +143,7 @@ header {
   color: var(--forest-green, #72b01d);
 }
 
-.active-link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--forest-green, #72b01d);
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-}
-
-.section {
-  margin: 100px 0;
-}
-
-.featured-tea-heading {
-  align-items: center;
-}
-
-.featured-tea-heading h2 {
-  margin: 0 auto;
-  font-size: 38px;
-}
-
-.featured-tea-heading h3 {
-  font-size: 20px;
-  margin-bottom: 56px;
-}
-
-.featured-tea-section {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 0;
-}
-
-.featured-tea-section li {
-  max-width: 360px;
-  background-color: var(--sparkling-frost, #d1d5da);
-  border-radius: 15px;
-}
-
-.featured-tea-section h4 {
-  font-size: 20px;
-  padding: 15px 30px;
-  margin: 0;
-}
-
-.featured-tea-section p {
-  padding: 0 30px 20px 30px;
-  margin: 0;
-}
-
-.featured-tea-section img {
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.locations-wrapper,
-.citrus-sunset-wrapper {
-  text-align: center;
-}
-
-.citrus-sunset-wrapper {
-  margin: 100px 0;
-}
-
-.locations-wrapper h2 {
-  font-size: 38px;
-  margin-bottom: 56px;
-}
-
-.citrus-sunset-wrapper h2 {
-  font-size: 38px;
-  margin-bottom: 100px;
-  margin-top: 0;
-}
-
-.locations-section,
-.citrus-sunset-section {
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.locations-section p {
-  line-height: 1.5;
-}
-
-.locations-section li {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  /* flex-basis: calc((100% - 72px) / 3); */
-  width: 352px;
-  height: 200px;
-  background-color: var(--mossy-green, #3f7d20);
-  color: var(--bgColor, #f7f9fb);
-  border-radius: 15px;
-}
-
-.locations-section li:first-child {
-  background-color: var(--forest-green, #72b01d);
-}
-
-.locations-section li:last-child {
-  background-color: var(--grey, #454955);
-}
-
-.citrus-sunset-section li {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  /* flex-basis: calc((100% - 72px) / 4); */
-  width: 264px;
-  height: 400px;
-  background-color: var(--forest-green, #72b01d);
-  color: var(--bgColor, #f7f9fb);
-  border-radius: 15px;
-}
-
-.citrus-sunset-section li:nth-child(1),
-.citrus-sunset-section li:nth-child(3),
-.citrus-sunset-section li:nth-child(6),
-.citrus-sunset-section li:nth-child(8) {
-  padding: 10px 30px;
-}
-
-.citrus-sunset-section li img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.home-image-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(images/spoons-with-herbal-tea.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-}
-
-.home-image-section h2 {
-  font-size: 38px;
-  font-weight: 400;
-  text-align: center;
-  color: var(--raven, #0d0a0b);
-}
+/* Site Footer */
 
 .footer-wrapper {
   flex-direction: column;
@@ -399,6 +198,7 @@ header {
   text-decoration: none;
   line-height: 1.5;
   color: var(--black, #000);
+  transition: color 250ms ease, fill 250ms ease;
 }
 
 .footer-contact a:hover,
@@ -418,6 +218,103 @@ header {
   padding: 20px 0;
   margin-block-end: 0;
 }
+
+/* 5. Component Styles
+---------------------------------------- */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bolder;
+  font-size: 24px;
+  color: var(--black);
+  text-decoration: none;
+  transition: color 250ms ease, fill 250ms ease;
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--forest-green);
+  fill: var(--forest-green);
+}
+
+.styled-link {
+  background-color: var(--forest-green, #72b01d);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 250ms ease;
+}
+
+.styled-link:hover,
+.styled-link:focus {
+  background-color: var(--mossy-green, #3f7d20);
+}
+
+.active-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--forest-green, #72b01d);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+/* 6. Page Styles
+---------------------------------------- */
+
+/* Home Banner */
+
+.home-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/spoons-with-herbal-tea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.home-image-section h2 {
+  font-weight: 400;
+  text-align: center;
+  color: var(--raven, #0d0a0b);
+}
+
+/* Banner */
+
+.banner-wrapper {
+  background-image: url(images/fruit-ice-tea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 760px;
+  position: relative;
+}
+
+.banner-wrapper .container {
+  display: block;
+}
+
+.banner-description {
+  padding-top: 10%;
+  text-align: right;
+}
+
+.banner-description p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Benefits */
 
 .benefits-section {
   margin-top: 100px;
@@ -450,6 +347,164 @@ header {
   text-align: justify;
 }
 
+/* Feautered Tea */
+
+.featured-tea-heading {
+  align-items: center;
+}
+
+.featured-tea-heading h2 {
+  margin: 0 auto;
+  font-size: 38px;
+}
+
+.featured-tea-heading h3 {
+  margin-bottom: 56px;
+}
+
+.featured-tea-section {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.featured-tea-section li {
+  max-width: 360px;
+  background-color: var(--sparkling-frost, #d1d5da);
+  border-radius: 15px;
+}
+
+.featured-tea-section h4 {
+  font-size: 20px;
+  padding: 15px 30px;
+  margin: 0;
+}
+
+.featured-tea-section p {
+  padding: 0 30px 20px 30px;
+  margin: 0;
+}
+
+.featured-tea-section img {
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Mission */
+
+.mission-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/top-view-tea-with-lemon-copy-space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 760px;
+}
+
+.mission-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-description h1,
+.mission-description p {
+  color: var(--black, #000);
+  text-align: center;
+}
+
+.mission-description p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Locations */
+
+.locations-wrapper,
+.citrus-sunset-wrapper {
+  text-align: center;
+}
+
+.locations-wrapper h2 {
+  margin-bottom: 56px;
+}
+
+.locations-section,
+.citrus-sunset-section {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.locations-section p {
+  line-height: 1.5;
+}
+
+.locations-section li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-basis: calc((100% - 72px) / 3); */
+  width: 352px;
+  height: 200px;
+  background-color: var(--mossy-green, #3f7d20);
+  color: var(--bgColor, #f7f9fb);
+  border-radius: 15px;
+}
+
+.locations-section li:first-child {
+  background-color: var(--forest-green, #72b01d);
+}
+
+.locations-section li:last-child {
+  background-color: var(--grey, #454955);
+}
+
+/* Tea of the Month */
+
+.citrus-sunset-wrapper {
+  margin: 100px 0;
+}
+
+.citrus-sunset-wrapper h2 {
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.citrus-sunset-section li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-basis: calc((100% - 72px) / 4); */
+  width: 264px;
+  height: 400px;
+  background-color: var(--forest-green, #72b01d);
+  color: var(--bgColor, #f7f9fb);
+  border-radius: 15px;
+}
+
+.citrus-sunset-section li:nth-child(1),
+.citrus-sunset-section li:nth-child(3),
+.citrus-sunset-section li:nth-child(6),
+.citrus-sunset-section li:nth-child(8) {
+  padding: 10px 30px;
+}
+
+.citrus-sunset-section li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Special Offer */
+
 .special-offer-wrapper {
   background-image: url(images/aromatic-fruit-ice-tea-table.jpg);
   background-repeat: no-repeat;
@@ -477,7 +532,6 @@ header {
 }
 
 .offer-description h2 {
-  font-size: 38px;
   margin-bottom: 8px;
   margin-top: 0;
 }
@@ -526,6 +580,8 @@ header {
   border-radius: 50px;
 }
 
+/* Contacts */
+
 .contact-section {
   display: flex;
   justify-content: flex-start;
@@ -561,30 +617,16 @@ header {
   line-height: 1.5;
   margin: 50px 0;
 }
-.contact-section-info h1 {
-  font-size: 70px;
-  margin-top: 0;
-}
-
-.contact-section-info h2 {
-  font-size: 38px;
-}
 
 .contact-section-info a {
   font-weight: 700;
   text-decoration: none;
   line-height: 1.5;
   color: var(--black, #000);
+  transition: color 250ms ease;
 }
 
 .contact-section-info a:hover,
 .contact-section-info a:focus {
   color: var(--forest-green, #339966);
-}
-
-/* Styles for hidden sections */
-
-.hidden-section {
-  opacity: 0;
-  transition: opacity 1s ease;
 }
