@@ -70,6 +70,63 @@
         </div>
       </section>
       <!-- End Contact section -->
+
+      <!-- Locations section -->
+      <section class="section locations-wrapper hidden-section">
+        <div class="flex-column">
+          <h2>Locations</h2>
+          <div class="location-map">
+            <ul class="locations-section flex-column" id="locationSwitcher">
+              <li>
+                <a
+                  class="locationButton"
+                  data-lat="40.748817"
+                  data-lng="-73.985428"
+                >
+                  <h3>Midtown</h3>
+                  <p>
+                    1234 Park Avenue<br />
+                    Suite 567 <br />
+                    New York, NY 10001
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="locationButton"
+                  data-lat="40.702663"
+                  data-lng="-73.997419"
+                >
+                  <h3>Brooklyn</h3>
+                  <p>
+                    67 Main St <br />
+                    Located in: Empire Stores <br />
+                    Brooklyn, NY 11201
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="locationButton"
+                  data-lat="40.733818"
+                  data-lng="-74.059205"
+                >
+                  <h3>Jersey City</h3>
+                  <p>
+                    3 Path Plaza, Floor 1<br />
+                    Located in: Journal Square<br />
+                    Jersey City, NJ 07306
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <div id="mapContainer">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End locations section -->
     </main>
 
     <!-- Footer section -->
@@ -133,5 +190,11 @@
 
     <!-- Script  -->
     <script src="script.js"></script>
+    <script src="locationSwitcher.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
