@@ -43,28 +43,78 @@
     <!-- End header section -->
 
     <main>
+      <!-- Contact Us Banner -->
+      <section class="contact-bg hidden-section">
+        <div class="mission-description">
+          <h1>Contact Us</h1>
+        </div>
+      </section>
+      <!-- End Contact Us Banner -->
+
       <!-- Contact section -->
       <section class="hidden-section">
-        <div class="contact-section">
-          <div class="contact-section-image">
-            <img
-              src="images/tea-cups-with-natural-herbs.jpg"
-              alt="Tea cups with natural herbs"
-              class="contact-image"
-            />
+        <div class="container section contact-section">
+          <div>
+            <h2>Get in touch</h2>
+            <form action="send_email.php" method="POST">
+              <label for="name">Full Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                pattern="[A-Za-z\s]+"
+                required
+              /><br /><br />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              /><br /><br />
+
+              <label for="subject">Subject:</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Your Subject"
+                required
+              /><br /><br />
+
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+                required
+              ></textarea
+              ><br /><br />
+
+              <input type="submit" value="Send Mail" class="styled-link" />
+            </form>
           </div>
           <div class="contact-section-info">
-            <h1>Contact Us</h1>
-            <h2>Do you need to contact us?</h2>
+            <h2>Contact Us</h2>
+            <h3>Do you need to contact us?</h3>
             <p>
               Do you have any questions?<br />
               Please contact us for details.
             </p>
-            <h2>Customer Care</h2>
+            <h3>Customer Care</h3>
             <p>
               Send an email to
               <a href="mailto:contact@tea2go.com">contact@tea2go.com</a> <br />
               We will try to answer as soon as possible.
+            </p>
+            <h3>Call Us</h3>
+            <p>
+              Feel free to call us at: <br />
+              <a href="tel:8067015264">806-701-5264</a>
             </p>
           </div>
         </div>

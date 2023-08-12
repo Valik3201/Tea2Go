@@ -648,39 +648,28 @@ p {
 
 /* Contacts */
 
+.contact-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/cup-with-herbal-tea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 760px;
+}
+
 .contact-section {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 48px;
 }
 
-.contact-section-image {
-  max-width: 720px;
-  height: auto;
-}
-
-@media (max-width: 1440px) and (min-width: 1223px) {
-  .contact-section {
-    height: 676px;
-  }
-}
-
-@media (max-width: 1224px) {
-  .contact-section-image {
-    max-width: 1224px;
-    height: auto;
-  }
-}
-
-.contact-image {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
-
+.contact-form,
 .contact-section-info {
-  padding-left: 30px;
-  margin: 50px 0;
+  flex-basis: calc((100% - 48px) / 2);
 }
 
 .contact-section-info h1,
@@ -700,6 +689,39 @@ p {
   color: var(--forest-green, #339966);
 }
 
+/* Contact Form */
+
+input[type="text"],
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--sparkling-frost, #d1d5da);
+  border-radius: 10px;
+  transition: border-color 0.3s easy;
+  background-color: var(--white, #fff);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  border-color: var(--forest-green, #72b01d);
+  outline: none;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="text"]:invalid,
+textarea:invalid {
+  border-color: var(--poppy-red, #da2c38);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
 /* About Us */
 
 .values-section {
@@ -743,6 +765,8 @@ p {
 .history-wrapper img {
   border-radius: 50%;
 }
+
+/* Image Collage */
 
 .gallery {
   padding: 1rem;
