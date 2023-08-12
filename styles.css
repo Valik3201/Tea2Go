@@ -722,6 +722,11 @@ label {
   display: block;
   margin-bottom: 10px;
 }
+
+.success-message {
+  color: var(--forest-green, #72b01d);
+  display: none;
+}
 /* About Us */
 
 .values-section {

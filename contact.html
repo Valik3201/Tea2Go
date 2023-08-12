@@ -54,9 +54,29 @@
       <!-- Contact section -->
       <section class="hidden-section">
         <div class="container section contact-section">
+          <div class="contact-section-info">
+            <h2>Contact Us</h2>
+            <br />
+            <h3>Do you need to contact us?</h3>
+            <p>
+              Do you have any questions?<br />
+              Please contact us for details.
+            </p>
+            <h3>Customer Care</h3>
+            <p>
+              Send an email to
+              <a href="mailto:contact@tea2go.com">contact@tea2go.com</a> <br />
+              We will try to answer as soon as possible.
+            </p>
+            <h3>Call Us</h3>
+            <p>
+              Feel free to call us at: <br />
+              <a href="tel:8067015264">806-701-5264</a>
+            </p>
+          </div>
           <div class="contact-form">
             <h2>Get in touch</h2>
-            <form action="send_email.php" method="POST">
+            <form id="contactForm" action="send_email.php" method="POST">
               <label for="name">Full Name:</label>
               <input
                 type="text"
@@ -93,25 +113,9 @@
 
               <input type="submit" value="Send Mail" class="styled-link" />
             </form>
-          </div>
-          <div class="contact-section-info">
-            <h2>Contact Us</h2>
-            <h3>Do you need to contact us?</h3>
-            <p>
-              Do you have any questions?<br />
-              Please contact us for details.
-            </p>
-            <h3>Customer Care</h3>
-            <p>
-              Send an email to
-              <a href="mailto:contact@tea2go.com">contact@tea2go.com</a> <br />
-              We will try to answer as soon as possible.
-            </p>
-            <h3>Call Us</h3>
-            <p>
-              Feel free to call us at: <br />
-              <a href="tel:8067015264">806-701-5264</a>
-            </p>
+            <div id="successMessage" class="success-message">
+              Message sent successfully
+            </div>
           </div>
         </div>
       </section>
@@ -236,6 +240,7 @@
 
     <!-- Script  -->
     <script src="script.js"></script>
+    <script src="contactForm.js"></script>
     <script src="locationSwitcher.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
