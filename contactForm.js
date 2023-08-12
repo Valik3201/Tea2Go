@@ -1,26 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const contactForm = document.getElementById("contactForm");
-  const successMessage = document.getElementById("successMessage");
+const contactForm = document.getElementById("contactForm");
+const messageSentDiv = document.getElementById("successMessage");
 
-  contactForm.addEventListener("submit", async function (event) {
-    event.preventDefault();
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    const formData = new FormData(contactForm);
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const subjectInput = document.getElementById("subject");
+  const messageInput = document.getElementById("message");
 
-    try {
-      const response = await fetch(contactForm.action, {
-        method: "POST",
-        body: formData,
-      });
+  const nameValue = nameInput.value.trim();
+  const emailValue = emailInput.value.trim();
+  const subjectValue = subjectInput.value.trim();
+  const messageValue = messageInput.value.trim();
 
-      if (response.ok) {
-        successMessage.style.display = "block";
-        contactForm.reset();
-      } else {
-        console.error("Failed to send message.");
-      }
-    } catch (error) {
-      console.error("An error occurred:", error);
-    }
-  });
+  if (!nameValue || !emailValue || !subjectValue || !messageValue) {
+    alert("Please fill in all required fields.");
+  } else {
+    messageSentDiv.style.display = "block";
+    contactForm.reset();
+  }
 });

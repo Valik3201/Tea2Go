@@ -726,6 +726,13 @@ label {
 .success-message {
   color: var(--forest-green, #72b01d);
   display: none;
+  /* display: block; */
+}
+
+.form-submit-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* About Us */
 

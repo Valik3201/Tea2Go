@@ -26,9 +26,8 @@
           <svg height="30" width="30" fill="currentColor">
             <use href="images/logo.svg#icon-logo"></use>
           </svg>
-
-          Tea2Go</a
-        >
+          Tea2Go
+        </a>
 
         <nav class="nav-menu-section">
           <ul class="nav-menu-items">
@@ -76,7 +75,7 @@
           </div>
           <div class="contact-form">
             <h2>Get in touch</h2>
-            <form id="contactForm" action="send_email.php" method="POST">
+            <form id="contactForm">
               <label for="name">Full Name:</label>
               <input
                 type="text"
@@ -111,11 +110,13 @@
               ></textarea
               ><br /><br />
 
-              <input type="submit" value="Send Mail" class="styled-link" />
+              <div class="form-submit-section">
+                <input type="submit" value="Send Mail" class="styled-link" />
+                <div id="successMessage" class="success-message">
+                  Message sent successfully!
+                </div>
+              </div>
             </form>
-            <div id="successMessage" class="success-message">
-              Message sent successfully
-            </div>
           </div>
         </div>
       </section>
