@@ -911,7 +911,7 @@ label {
 
 /* Image Collage */
 
-.gallery {
+/* .gallery {
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(5, minmax(500px, 1fr));
@@ -921,20 +921,20 @@ label {
   overflow: scroll;
   scroll-snap-type: both mandatory;
   scroll-padding: 1rem;
-}
+} */
 
-.active {
+/* .active {
   scroll-snap-type: unset;
-}
+} */
 
-.gallery li {
+/* .gallery li {
   scroll-snap-align: center;
   display: inline-block;
   border-radius: 3px;
   height: 333px;
   width: 500px;
   max-width: 100%;
-}
+} */
 
 .gallery-heading {
   margin-top: 30px;
@@ -1037,4 +1037,35 @@ label {
   .nav-menu-section {
     display: block;
   }
+}
+
+/* Swiper */
+
+.swiper {
+  width: 60%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--bgColor, #f6f8fa) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--bgColor, #f6f8fa) !important;
 }

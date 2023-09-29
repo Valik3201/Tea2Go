@@ -14,7 +14,10 @@
 
     <!-- External CSS  -->
     <link rel="stylesheet" href="styles.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="shortcut icon" href="images/tea-2-go.ico" />
     <title>Tea2Go - About Us</title>
   </head>
@@ -159,43 +162,50 @@
       <section class="section hidden-section">
         <div class="text-center">
           <h2>Our Target Market</h2>
-          <ul class="gallery">
-            <li>
-              <img
-                width="500"
-                src="images/image-collage/friends-with-tea.jpg"
-                alt="Friends sharing tea and laughter"
-              />
-            </li>
-            <li>
-              <img
-                width="500"
-                src="images/image-collage/front-view-girl-pours-tea-from-teapot-armoud-glass-with-jam-sweets-table.jpg"
-                alt="Front view of a girl pouring tea from a teapot, accompanied by a glass of jam and sweets on the table"
-              />
-            </li>
-            <li>
-              <img
-                width="500"
-                src="images/image-collage/front-view-two-buns-with-nuts-two-armouda-glasses-tea-with-tea-kettle-table.jpg"
-                alt="Front view of two buns with nuts and two armouda glasses of tea, accompanied by a tea kettle on the table"
-              />
-            </li>
-            <li>
-              <img
-                width="500"
-                src="images/image-collage/laptop-digital-tablet-book-pot-plant-wooden-table-cafe.jpg"
-                alt="Laptop, digital tablet, book, pot plant, and wooden table in a cozy cafe"
-              />
-            </li>
-            <li>
-              <img
-                width="500"
-                src="images/image-collage/time-laugh-with-tea.jpg"
-                alt="Time for laughter and tea"
-              />
-            </li>
-          </ul>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  width="500"
+                  src="images/image-collage/friends-with-tea.jpg"
+                  alt="Friends sharing tea and laughter"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="500"
+                  src="images/image-collage/front-view-girl-pours-tea-from-teapot-armoud-glass-with-jam-sweets-table.jpg"
+                  alt="Front view of a girl pouring tea from a teapot, accompanied by a glass of jam and sweets on the table"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="500"
+                  src="images/image-collage/front-view-two-buns-with-nuts-two-armouda-glasses-tea-with-tea-kettle-table.jpg"
+                  alt="Front view of two buns with nuts and two armouda glasses of tea, accompanied by a tea kettle on the table"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="500"
+                  src="images/image-collage/laptop-digital-tablet-book-pot-plant-wooden-table-cafe.jpg"
+                  alt="Laptop, digital tablet, book, pot plant, and wooden table in a cozy cafe"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="500"
+                  src="images/image-collage/time-laugh-with-tea.jpg"
+                  alt="Time for laughter and tea"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
           <h3 class="gallery-heading">
             The Tea Lovers, the Dreamers, the Explorers
           </h3>
@@ -263,7 +273,29 @@
     <!-- End footer section -->
 
     <!-- Script  -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="script.js"></script>
-    <script src="imageCollage.js"></script>
   </body>
 </html>
