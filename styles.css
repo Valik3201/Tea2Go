@@ -90,7 +90,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  padding-bottom: 10px;
+  padding-bottom: 36px;
 }
 
 @media screen and (min-width: 768px) {
@@ -357,6 +357,16 @@ p {
   }
 }
 
+.banner {
+  height: 360px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 760px;
+  }
+}
+
 /* 6. Page Styles
 ---------------------------------------- */
 
@@ -392,14 +402,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 360px;
   position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .banner-wrapper {
-    height: 760px;
-  }
 }
 
 .banner-wrapper .container {
@@ -438,12 +441,6 @@ p {
   .banner-description p {
     font-size: 24px;
     margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 716px) {
-  .special-offer-wrapper .banner-description h1 {
-    font-size: 60px;
   }
 }
 
@@ -557,13 +554,13 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 760px;
 }
 
 .mission-description {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60%;
 }
 
 .mission-description h1,
@@ -577,7 +574,17 @@ p {
 }
 
 .mission-description p {
-  font-size: 24px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .mission-description p {
+    font-size: 24px;
+  }
+
+  .mission-description {
+    width: 100%;
+  }
 }
 
 /* Locations */
@@ -612,11 +619,21 @@ p {
 .locations-section li:first-child {
   background-color: var(--forest-green, #72b01d);
   border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .locations-section li:last-child {
   background-color: var(--grey, #454955);
-  border-bottom-left-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .locations-section li:first-child {
+    border-top-right-radius: 0;
+  }
+
+  .locations-section li:last-child {
+    border-bottom-left-radius: 15px;
+  }
 }
 
 .locations-section li:hover {
@@ -635,7 +652,14 @@ p {
 
 .location-map {
   display: flex;
+  flex-direction: column;
   gap: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .location-map {
+    flex-direction: row;
+  }
 }
 
 #mapContainer {
@@ -646,8 +670,15 @@ p {
 #map {
   width: 100%;
   height: 100%;
-  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  #map {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+  }
 }
 
 #locationSwitcher {
@@ -714,7 +745,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 760px;
   position: relative;
 }
 
@@ -787,7 +817,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 760px;
 }
 
 .contact-section {
@@ -800,7 +829,18 @@ p {
 
 .contact-form,
 .contact-section-info {
-  flex-basis: calc((100% - 100px) / 2);
+  flex-basis: 100%;
+}
+
+.contact-form label {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form,
+  .contact-section-info {
+    flex-basis: calc((100% - 100px) / 2);
+  }
 }
 
 .contact-section-info h1,
@@ -881,9 +921,15 @@ label {
 
 .svg-container {
   flex: 1;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .svg-container {
+    display: flex;
+  }
 }
 
 .svg-container svg {
@@ -902,7 +948,14 @@ label {
 .history-wrapper {
   display: inline-flex;
   align-items: center;
+  flex-direction: column;
   gap: 36px;
+}
+
+@media screen and (min-width: 768px) {
+  .history-wrapper {
+    flex-direction: row;
+  }
 }
 
 .history-wrapper img {
@@ -937,7 +990,9 @@ label {
 } */
 
 .gallery-heading {
-  margin-top: 30px;
+  width: 75%;
+  padding-top: 30px;
+  margin: 0 auto;
 }
 
 /* Mobile Menu */
@@ -1042,8 +1097,15 @@ label {
 /* Swiper */
 
 .swiper {
-  width: 60%;
+  width: 90%;
   height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 60%;
+    height: auto;
+  }
 }
 
 .swiper-slide {

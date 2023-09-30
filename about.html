@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Modern Normalize CSS -->
     <link
@@ -25,12 +26,12 @@
     <!-- Header section -->
     <header>
       <div class="container header-container">
-        <a href="index.html" class="logo">
+        <a href="#" class="logo">
           <svg height="30" width="30" fill="currentColor">
             <use href="images/logo.svg#icon-logo"></use>
           </svg>
-          Tea2Go</a
-        >
+          Tea2Go
+        </a>
 
         <nav class="nav-menu-section">
           <ul class="nav-menu-items">
@@ -40,13 +41,30 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+
+        <!-- Humburger Button for Mobile Menu -->
+        <div class="mobile-menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
+
+      <!-- Mobile Menu -->
+      <nav class="container mobile-nav-menu">
+        <ul class="mobile-nav-menu-items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" class="active-link">About Us</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- End header section -->
 
     <main>
       <!-- Our mission section -->
-      <section class="mission-bg hidden-section">
+      <section class="banner mission-bg hidden-section">
         <div class="mission-description">
           <h1>Our Mission</h1>
           <p>
@@ -297,5 +315,6 @@
       });
     </script>
     <script src="script.js"></script>
+    <script src="mobile-menu.js"></script>
   </body>
 </html>
