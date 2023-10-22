@@ -52,10 +52,11 @@ As I crafted Tea2Go, I drew inspiration from various sources to create a unique 
 
 Tea2Go is an ongoing project with plans for future updates:
 
-- **Responsive Design:** Implementing responsive design to ensure Tea2Go adapts seamlessly to various devices and screen sizes.
-- **Enhanced Interactivity:** Incorporating more JavaScript to introduce additional interactive elements, making the web experience even more engaging.
-- **New Tea Varieties:** The Collection page will continue to evolve with the addition of new and unique tea blends, expanding the options for patrons.
-- **User Feedback Integration:** Incorporating a feedback mechanism to gather input from visitors, ensuring their suggestions and preferences shape the future of Tea2Go.
+- ✅ **Responsive Design:** Implementing responsive design to ensure Tea2Go adapts seamlessly to various devices and screen sizes.
+- ⬜ **Enhanced Interactivity:** Incorporating more JavaScript to introduce additional interactive elements, making the web experience even more engaging.
+- ⬜ **New Tea Varieties:** The Collection page will continue to evolve with the addition of new and unique tea blends, expanding the options for patrons.
+- ⬜ **User Feedback Integration:** Incorporating a feedback mechanism to gather input from visitors, ensuring their suggestions and preferences shape the future of Tea2Go.
+- ⬜ **Dark Mode:** Adding a dark mode for the website to provide a more comfortable and eye-friendly browsing experience during low light conditions.
 
 ## 🙌 Gratitude to Codecademy
 
