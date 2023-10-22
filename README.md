@@ -15,6 +15,8 @@
 
 Tea2Go is a website for a non-real tea cafe created as part of web development learning at **[Codecademy](https://github.com/Codecademy)**. The goal of this project is to showcase skills in building a web site for a tea cafe named "Tea2Go." The web site includes pages such as Home, About Us, Collection, and Contact.
 
+![Responsive Design Preview](https://raw.githubusercontent.com/Valik3201/Tea2Go/966e889767dacf6ca75e0357460daa4edf8dd2cf/images/screenshot.png)
+
 ## 💡 Features
 
 - Home Page: Introduce visitors to the world of Tea2Go with a captivating hero banner and highlights of the unique tea offerings.
