@@ -890,6 +890,10 @@ textarea:invalid {
   border-color: var(--poppy-red, #da2c38);
 }
 
+textarea#message {
+  resize: none;
+}
+
 label {
   display: block;
   margin-bottom: 10px;
